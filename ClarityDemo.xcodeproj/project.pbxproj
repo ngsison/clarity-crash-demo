@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		43335D282D3AB03500EFFAC0 /* Clarity in Frameworks */ = {isa = PBXBuildFile; productRef = 43335D272D3AB03500EFFAC0 /* Clarity */; };
+		43335D402D3AB53B00EFFAC0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 43335D3F2D3AB53B00EFFAC0 /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		43335CFE2D3AABD900EFFAC0 /* ClarityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClarityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43335D282D3AB03500EFFAC0 /* Clarity in Frameworks */,
+				43335D402D3AB53B00EFFAC0 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = ClarityDemo;
 			packageProductDependencies = (
+				43335D272D3AB03500EFFAC0 /* Clarity */,
+				43335D3F2D3AB53B00EFFAC0 /* SnapKit */,
 			);
 			productName = ClarityDemo;
 			productReference = 43335CFE2D3AABD900EFFAC0 /* ClarityDemo.app */;
@@ -107,6 +116,10 @@
 			);
 			mainGroup = 43335CF52D3AABD900EFFAC0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				43335D262D3AB03500EFFAC0 /* XCRemoteSwiftPackageReference "clarity-apps" */,
+				43335D3E2D3AB53B00EFFAC0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 43335CFF2D3AABD900EFFAC0 /* Products */;
 			projectDirPath = "";
@@ -335,6 +348,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43335D262D3AB03500EFFAC0 /* XCRemoteSwiftPackageReference "clarity-apps" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/clarity-apps";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+		43335D3E2D3AB53B00EFFAC0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43335D272D3AB03500EFFAC0 /* Clarity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43335D262D3AB03500EFFAC0 /* XCRemoteSwiftPackageReference "clarity-apps" */;
+			productName = Clarity;
+		};
+		43335D3F2D3AB53B00EFFAC0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43335D3E2D3AB53B00EFFAC0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43335CF62D3AABD900EFFAC0 /* Project object */;
 }
